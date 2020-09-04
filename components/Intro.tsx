@@ -24,8 +24,7 @@ export const Intro: FunctionComponent<Iprops> = ({
         <div
           className={`${classes.introContent} ${
             fullScreen && classes.homeDescription
-          }`}
-        >
+          }`}>
           {title && <h1>{title}</h1>}
           {subtitle && <p>{subtitle}</p>}
           {children}
@@ -46,9 +45,9 @@ const useStyles = makeStyles((theme: Theme) =>
       fontFamily: "Nunito Sans",
       width: "100%",
       backgroundSize: "100%",
-      backgroundRepeat: "no-repeat",
       backgroundAttachment: "scroll",
-      backgroundPosition: "top center",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "top left",
       height: "420px",
       marginBottom: "60px",
       paddingTop: "120px",
@@ -61,6 +60,8 @@ const useStyles = makeStyles((theme: Theme) =>
     fullScreen: {
       height: "100vh",
       alignItems: "start",
+      backgroundSize: "cover",
+      backgroundAttachment: "fixed",
     },
     introContent: {
       height: "100%",
@@ -87,13 +88,13 @@ const useStyles = makeStyles((theme: Theme) =>
       alignItems: "start",
       width: "50%",
       "& h1": {
-        fontSize: "5rem",
-        
+        fontFamily: "'Bree Serif', serif",
+        fontSize: "3.750rem",
+        fontWeight: "200",
         margin: "5px 0",
       },
       "& p": {
-        fontSize: "2rem",
-        textTransform: "uppercase",
+        fontSize: "1.285rem",
         margin: 0,
         textAlign: "left",
       },
