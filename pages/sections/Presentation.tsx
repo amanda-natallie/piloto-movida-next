@@ -32,10 +32,12 @@ const Presentation = () => {
               pendências de modo fácil e ágil, sem necessitar de deslocamento ou
               de uma ligação.
             </p>
-            <blockquote>Afinal de contas, seu tempo é precioso para gastar com filas. </blockquote>
+            <blockquote>
+              Afinal de contas, seu tempo é precioso para gastar com filas.{" "}
+            </blockquote>
           </Grid>
-          <Grid item md={7} >
-            <img src="/images/images/1.png" alt="" className={classes.img}/>
+          <Grid item md={7}>
+            <img src="/images/images/1.png" alt="" className={classes.img} />
           </Grid>
         </Grid>
       </div>
@@ -47,7 +49,8 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     cta: {
       zIndex: 99,
-      width: "81%",
+      width: "80%",
+      maxWidth: "1500px",
       margin: "-12.2vh auto 0 auto",
       display: "flex",
       alignItems: "center",
@@ -114,8 +117,9 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     presentation: {
-      width: "81%",
-      margin: "0 auto",
+      width: "80%",
+      maxWidth: "1500px",
+      margin: "0 auto 60px auto",
       boxShadow: "6px 5px 30px 0px rgba(0, 0, 0, 0.12)",
       padding: `${theme.spacing(10)}px`,
       "& h4": {
@@ -152,9 +156,10 @@ const useStyles = makeStyles((theme: Theme) =>
         margin: 0,
       },
     },
-        img: {
-          float: "right"
-        }
+    img: {
+      float: "right",
+      maxWidth: "100%"
+    },
   })
 );
 

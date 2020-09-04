@@ -37,7 +37,8 @@ export const Intro: FunctionComponent<Iprops> = ({
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     container: {
-      maxWidth: "80vw",
+      width: "80%",
+      maxWidth: "1400px",
       margin: "auto"
     },
     pageIntro: {

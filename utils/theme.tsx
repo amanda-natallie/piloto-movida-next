@@ -13,6 +13,7 @@ export const theme = createMuiTheme({
       main: "rgb(20, 32, 43)",
     },
   },
+ 
   overrides: {
     MuiCssBaseline: {
       "@global": {
