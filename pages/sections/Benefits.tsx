@@ -49,18 +49,20 @@ const useStyles = makeStyles((theme: Theme) =>
     benefits: {
       width: "100%",
       height: "75vh",
+      minHeight: "700px",
     },
     one: {
-      height: "110%",
+      height: "100%",
       background: "url(/images/bg/2.png) bottom left no-repeat",
-      borderTopRightRadius: "10px",
+      borderTopRightRadius: "20px",
       backgroundAttachment: "fixed",
       backgroundSize: "auto 100%",
+      marginBottom: "200px"
     },
     two: {
       background: theme.palette.secondary.main,
-      borderBottomLeftRadius: "10px",
-      margin: "40px 0px 0px 0px",
+      borderBottomLeftRadius: "20px",
+      margin: "60px 0px 0px 0px",
       height: "100%",
       padding: "0 13vw 0 6vw",
       display: "flex",
