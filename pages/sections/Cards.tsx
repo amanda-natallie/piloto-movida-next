@@ -14,16 +14,16 @@ const Cards = () => {
   return (
     <div className={`${classes.Cards}`}>
         <div className={`${classes.information}`}>
-            <p>
+            <div>
                 <div className={`${classes.square} ${classes.mr10}`}></div>
                 <span className={`${classes.mr10}`}>Home &gt; </span>
                 Portal Do Motorista
-            </p>
+            </div>
 
 
-            <p>
-            Olá,<span className={`${classes.mgP}`}>Rodrigo</span>!Seja bem-vindo à sua area exclusiva! <span  className={`${classes.mgP}`}> sair</span>
-            </p>
+            <div>
+            Olá, <span className={`${classes.mgP}`}>Rodrigo</span>! Seja bem-vindo à sua area exclusiva! <span  className={`${classes.mgP}`}> sair</span>
+            </div>
         </div>
 
         <div className={classes.containerCards}>
@@ -115,10 +115,11 @@ const useStyles = makeStyles((theme: Theme) =>
     
     information:{
         display:"flex",
+        alignItems: "center",
         justifyContent:"space-between",
         width:"100%",
         
-        "& p":{
+        "& div":{
             display:"flex",
             alignItems:"center",
         },
@@ -133,7 +134,8 @@ const useStyles = makeStyles((theme: Theme) =>
         height:"20px",
         width:"20px",
         background: theme.palette.primary.main,
-        marginRight:"10px"
+        marginRight:"10px",
+        display: "inline-block"
     },
     mgP:{
         marginLeft:"2px",

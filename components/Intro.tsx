@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundAttachment: "scroll",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "top left",
-      height: "420px",
+      height: "290px",
       marginBottom: "60px",
       paddingTop: "120px",
       paddingBottom: "50px",
@@ -65,6 +65,7 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundAttachment: "fixed",
     },
     introContent: {
+      width: "100%",
       height: "100%",
       textAlign: "center",
       display: "flex",

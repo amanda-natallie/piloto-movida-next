@@ -7,6 +7,7 @@ import {
   Grid,
   Button,
 } from "@material-ui/core";
+import Link from "next/link";
 
 export const Header: FunctionComponent = () => {
   const classes = useStyles();
@@ -24,7 +25,9 @@ export const Header: FunctionComponent = () => {
             <div className={classes.menu}>
               <ul>
                 <li>
-                  <a href="">Home</a>
+                  <Link href="/">
+                    <a href="">Home</a>
+                  </Link>
                 </li>
                 <li>
                   <a href="">O que é</a>
@@ -33,7 +36,9 @@ export const Header: FunctionComponent = () => {
                   <a href="">Como funciona</a>
                 </li>
                 <li>
-                  <a href="">Login</a>
+                  <Link href="/login">
+                    <a href="">Login</a>
+                  </Link>
                 </li>
                 <li>
                   <a href="">Benefícios</a>
@@ -42,9 +47,7 @@ export const Header: FunctionComponent = () => {
             </div>
           </Grid>
           <Grid item xs={3}>
-            <Button className={classes.ctaButton}>
-              Quero Participar
-            </Button>
+            <Button className={classes.ctaButton}>Quero Participar</Button>
           </Grid>
         </Grid>
       </div>
@@ -68,7 +71,7 @@ const useStyles = makeStyles((theme: Theme) =>
         height: "100px",
         display: "flex",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
       },
     },
     brand: {
@@ -85,7 +88,7 @@ const useStyles = makeStyles((theme: Theme) =>
         height: "100%",
         padding: 0,
         margin: 0,
-        
+
         "& li": {
           position: "relative",
           paddingLeft: 0,
@@ -121,7 +124,7 @@ const useStyles = makeStyles((theme: Theme) =>
       "&:hover": {
         background: "rgba(204, 120, 47, 0.6)",
         border: "2px solid rgba(204, 120, 47, 1)",
-      }
-    }
+      },
+    },
   })
 );
