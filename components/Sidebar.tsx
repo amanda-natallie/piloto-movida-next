@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import {
   makeStyles,
   Theme,
@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     btn: {
-      
+      width: "100%",
       "& > span > a": {
         display: "block",
         zIndex: 14,
@@ -97,4 +97,4 @@ const useStyles = makeStyles((theme: Theme) =>
     },
   })
 );
-export default Sidebar;
+export default memo(Sidebar);
