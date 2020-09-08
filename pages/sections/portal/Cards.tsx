@@ -3,55 +3,38 @@ import {
   makeStyles,
   Theme,
   createStyles,
-  Grid,
-  Typography,
   Link,
+  Grid,
 } from "@material-ui/core";
-import CheckIcon from "@material-ui/icons/Check";
 
 const Cards = () => {
   const classes = useStyles();
 
   return (
-    <div className={`${classes.Cards}`}>
-        <div className={`${classes.information}`}>
-            <div>
-                <div className={`${classes.square} ${classes.mr10}`}></div>
-                <span className={`${classes.mr10}`}>Home &gt; </span>
-                Portal Do Motorista
-            </div>
-
-
-            <div>
-            Olá, <span className={`${classes.mgP}`}>Rodrigo</span>! Seja bem-vindo à sua area exclusiva! <span  className={`${classes.mgP}`}> sair</span>
-            </div>
-        </div>
-
-        <div className={classes.containerCards}>
-            <div className={`${classes.informationCards} `}>   
+    <Grid container>
+        <Grid item sm={6} md={4}>
+        <div className={`${classes.informationCards} `}>   
                 <div className={`${classes.cx1}`}></div>         
                 <div>
                     <h2>Meus Dados</h2>
                     <p>Altere o seu cadastro, senha e cartões cadastrados.</p>
-
                     <a href="#">Acessar meus dados</a>
                 </div>
             </div>
-
-
-            <div className={`${classes.informationCards} `}>   
+        </Grid>
+        <Grid item sm={6} md={4}>
+        <div className={`${classes.informationCards} `}>   
                 <div className={`${classes.cx2}`}></div>         
                 <div>
                     <h2>Contratos</h2>
                     <p>Gerencie seus contratos, prorrogue seu plano de assinatura e mais.</p>
 
-                    <Link href="/planos">Acessar meus dados</Link>
+                    <Link href="/portal/contratos">Acessar meus dados</Link>
                 </div>
             </div>
-
-
-
-            <div className={`${classes.informationCards} `}>   
+        </Grid>
+        <Grid item sm={6} md={4}>
+        <div className={`${classes.informationCards} `}>   
                 <div className={`${classes.cx3}`}></div>         
                 <div>
                     <h2>Reservas</h2>
@@ -60,10 +43,9 @@ const Cards = () => {
                     <a href="#">Acessar meus dados</a>
                 </div>
             </div>
-        </div>
-
-        <div className={classes.containerCards}>
-            <div className={`${classes.informationCards} `}>   
+        </Grid>
+        <Grid item sm={6} md={4}>
+        <div className={`${classes.informationCards} `}>   
                 <div className={`${classes.cx4}`}></div>         
                 <div>
                     <h2>Documentação</h2>
@@ -72,9 +54,9 @@ const Cards = () => {
                     <a href="#">Acessar meus dados</a>
                 </div>
             </div>
-
-
-            <div className={`${classes.informationCards} `}>   
+        </Grid>
+        <Grid item sm={6} md={4}>
+        <div className={`${classes.informationCards} `}>   
                 <div className={`${classes.cx5}`}></div>         
                 <div>
                     <h2>Financeiro</h2>
@@ -83,10 +65,9 @@ const Cards = () => {
                     <a href="#">Acessar meus dados</a>
                 </div>
             </div>
-
-
-
-            <div className={`${classes.informationCards} `}>   
+        </Grid>
+        <Grid item sm={6} md={4}>
+        <div className={`${classes.informationCards} `}>   
                 <div className={`${classes.cx6}`}></div>         
                 <div>
                     <h2>Suporte & Ajuda</h2>
@@ -95,10 +76,9 @@ const Cards = () => {
                     <a href="#">Acessar meus dados</a>
                 </div>
             </div>
-        </div>
+        </Grid>
+    </Grid>
 
-
-    </div>
   );
 };
 

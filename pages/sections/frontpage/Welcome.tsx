@@ -1,5 +1,5 @@
 import React from 'react'
-import { Intro } from '../../components/Intro'
+import { Intro } from '../../../components/Intro'
 import { Button, makeStyles, Theme, createStyles } from '@material-ui/core'
 
 const Welcome = () => {
