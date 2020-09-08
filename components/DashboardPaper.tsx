@@ -33,7 +33,7 @@ export const DashboardPaper: FunctionComponent<Iprops> = ({
           </div>
 
           <div>
-            Olá, <span className={classes.mgP}>Rodrigo</span>! Seja
+            Olá, <span className={classes.mgP}>Suellen</span>! Seja
             bem-vindo à sua area exclusiva!{" "}
             <span className={classes.mgP}> sair</span>
           </div>
@@ -52,6 +52,7 @@ const useStyles = makeStyles((theme: Theme) =>
       display: "block",
     },
     information: {
+      marginBottom: 60,
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
