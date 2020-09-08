@@ -1,8 +1,13 @@
 import { Container } from "../components/Container";
-import { Typography } from "@material-ui/core";
-
+import { Intro } from "../components/Intro";
+import About from "./sections/About"
 export default () => (
   <Container>
-    <Typography children="About page" variant="h6" />
+        <Intro
+          bg="/images/bg/1.jpg"
+          title="O que é"
+          subtitle="O que é esse projeto?"
+        ></Intro>
+        <About />
   </Container>
 );

@@ -119,7 +119,7 @@ const useStyles = makeStyles((theme: Theme) =>
         alignItems: "center",
         justifyContent:"space-between",
         width:"100%",
-        
+        fontSize: theme.typography.pxToRem(18),
         "& div":{
             display:"flex",
             alignItems:"center",
