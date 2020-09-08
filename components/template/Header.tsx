@@ -48,7 +48,7 @@ export const Header: FunctionComponent = () => {
           </Grid>
           <Grid item xs={3}>
             <Button className={classes.ctaButton}>
-              <Link href="/area-restrita">Acessar minha Conta</Link>
+              <Link href="/portal">Acessar Portal</Link>
             </Button>
           </Grid>
         </Grid>

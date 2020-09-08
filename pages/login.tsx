@@ -38,7 +38,7 @@ const login = () => {
               autoComplete="current-password"
             />
             <Button className={`${classes.btn} ${classes.buttonOrange}`}>
-              <Link href="/area-restrita">Login</Link>
+              <Link href="/portal">Login</Link>
             </Button>
           </div>
         </Grid>
