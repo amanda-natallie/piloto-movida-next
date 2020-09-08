@@ -1,5 +1,5 @@
 import { Container } from "../components/Container";
-import Senha from "./sections/Senha";
+import Senha from "./sections/portal/Senha";
 import { Intro } from "../components/Intro";
 
 export default () => {

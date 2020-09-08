@@ -13,7 +13,7 @@ import {
   } from "@material-ui/core";
 
 import CheckIcon from "@material-ui/icons/Check";
-import { theme } from "../../utils/theme";
+import { theme } from "../../../utils/theme";
 
 const Senha = () => {
   const classes = useStyles();

@@ -1,6 +1,6 @@
 import { Container } from "../components/Container";
 import { Intro } from "../components/Intro";
-import About from "./sections/About"
+import About from "./sections/frontpage/About"
 export default () => (
   <Container>
         <Intro
