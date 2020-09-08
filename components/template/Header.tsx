@@ -47,7 +47,9 @@ export const Header: FunctionComponent = () => {
             </div>
           </Grid>
           <Grid item xs={3}>
-            <Button className={classes.ctaButton}>Quero Participar</Button>
+            <Button className={classes.ctaButton}>
+              <Link href="/area-restrita">Acessar minha Conta</Link>
+            </Button>
           </Grid>
         </Grid>
       </div>
@@ -110,6 +112,24 @@ const useStyles = makeStyles((theme: Theme) =>
             color: "inherit",
             opacity: 1,
             transition: "0.2s",
+
+            "&:after": {
+              content: "''",
+              position: "absolute",
+              bottom: 30,
+              left: 0,
+              right: 0,
+              width: "100%",
+              height: "1px",
+              transform: "scaleX(0)",
+              backgroundColor: "white",
+              transition: "transform 0.3s",
+            },
+            "&:hover": {
+              "&:after": {
+                transform: "scaleX(1)",
+              },
+            },
           },
         },
       },
@@ -121,6 +141,11 @@ const useStyles = makeStyles((theme: Theme) =>
       color: "#fff",
       transition: "all 0.2s ease",
 
+      "& * ": {
+        textDecoration: "none",
+        color: "#fff",
+      },
+
       "&:hover": {
         background: "rgba(204, 120, 47, 0.6)",
         border: "2px solid rgba(204, 120, 47, 1)",
@@ -128,3 +153,6 @@ const useStyles = makeStyles((theme: Theme) =>
     },
   })
 );
+
+
+
