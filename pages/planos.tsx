@@ -7,12 +7,12 @@ import Plans from "./sections/Plans";
 
 export default () => {
   return (
-    <MuiThemeProvider theme={theme}>
+    
       <Container>
         <Welcome />
         <Plans />
       </Container>
-    </MuiThemeProvider>
+    
   );
 };
  

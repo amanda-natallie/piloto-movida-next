@@ -4,8 +4,11 @@ import {
   Theme,
   createStyles,
   CssBaseline,
+  MuiThemeProvider,
 } from "@material-ui/core";
 import { Header } from "./template/Header";
+import { theme } from "../utils/theme";
+import Footer from "./template/Footer";
 
 interface Iprops {
   teste?: string;
@@ -15,11 +18,14 @@ export const Container: FunctionComponent<Iprops> = ({ children, teste }) => {
 
   return (
     <>
+    <MuiThemeProvider theme={theme}>
       <div className={classes.container}>
         <CssBaseline />
         <Header />
         {children}
+        <Footer />
       </div>
+    </MuiThemeProvider>
     </>
   );
 };

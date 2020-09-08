@@ -5,6 +5,7 @@ import {
   createStyles,
   Grid,
   Typography,
+  Link,
 } from "@material-ui/core";
 import CheckIcon from "@material-ui/icons/Check";
 
@@ -44,7 +45,7 @@ const Cards = () => {
                     <h2>Contratos</h2>
                     <p>Gerencie seus contratos, prorrogue seu plano de assinatura e mais.</p>
 
-                    <a href="#">Acessar meus dados</a>
+                    <Link href="/planos">Acessar meus dados</Link>
                 </div>
             </div>
 

@@ -8,13 +8,13 @@ import Strategy from "./sections/Strategy";
 
 export default () => {
   return (
-    <MuiThemeProvider theme={theme}>
+    
       <Container>
         <Welcome />
         <Presentation />
         <Benefits />
         <Strategy />
       </Container>
-    </MuiThemeProvider>
+    
   );
 };

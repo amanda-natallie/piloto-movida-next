@@ -107,7 +107,7 @@ const useStyles = makeStyles((theme: Theme) =>
         color: "white",
       },
       "& *:hover": {
-        borderColor: "white",
+        borderColor: "white !important",
         color: "white",
       },
     },

@@ -137,9 +137,9 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     topics:{
       color:"#000",
-      padding:"20px",
+      padding:"0 100px 100px",
       display:"flex",
-      justifyContent:"space-around"
+      justifyContent:"center"
     },
     topics_left:{},
 
