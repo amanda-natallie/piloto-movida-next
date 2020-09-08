@@ -37,7 +37,10 @@ const About = () => {
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    About:{},
+    About:{
+        width:"75%",
+        margin: '0 auto',
+    },
     myImg:{
         height:"100%",
         width:"80%",
