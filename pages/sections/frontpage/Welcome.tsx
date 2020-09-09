@@ -8,7 +8,7 @@ const Welcome = () => {
     <Intro
     bg="/images/bg/1.jpg"
     fullScreen
-    title="Seu dia a dia, mesma rotina, mais praticidade"
+    title="MOVIDA PILOTO: Seu dia a dia, mesma rotina, mais praticidade"
     subtitle="resolva suas pendencias online com facilidade e segurança"
   >
     <div className={classes.actions}>
