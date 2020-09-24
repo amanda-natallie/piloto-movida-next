@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme: Theme) =>
     destaqueSec1: {
       fontSize: theme.typography.pxToRem(28),
       background: "#ececec",
-      borderLeft: "2px solid rgb(247, 73, 25)",
+      borderLeft: "2px solid rgb(247, 125, 0)",
       padding: "15px",
       fontWeight: "light",
       fontFamily: "'Bree Serif', serif",

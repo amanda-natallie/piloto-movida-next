@@ -7,12 +7,13 @@ import {
   Button,
 } from "@material-ui/core";
 import Link from "next/link";
+import styles from "../assets/css/styles.module.scss"
 
 const Sidebar = () => {
   const classes = useStyles();
   return (
     <Grid item md={3}>
-      <div className={classes.sidebar}>
+      <div className={styles.teste}>
         <div className={classes.avatar}>
           <img src="/images/images/profile-dp.jpg" alt="avatar photo" />
           <h3>Suellen Mariano Garcia</h3>

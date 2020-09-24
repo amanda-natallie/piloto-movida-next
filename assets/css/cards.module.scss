@@ -1,0 +1,100 @@
+@import "./theme/colors";
+@import "./theme/fonts";
+@import "./theme/theme";
+
+.cards {
+  width: calc(100% - 12px);
+  padding-left: 12px;
+
+  .profile {
+    background-color: $orange;
+    color: white;
+    border-radius: 0 25px 0 25px;
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      margin: auto;
+      box-shadow: $heavy_box_shadow;
+    }
+    .intro {
+      display: flex;
+      align-items: space-between;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+
+      h3 {
+        margin: 5px 0 0 0;
+        font-family: $fontTitle;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+    }
+    .info {
+      width: 100%;
+      padding: 0 10px 20px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      p {
+        
+        margin: 0;
+        line-height: 1.3rem;
+        text-align: center;
+      }
+    }
+    .benefits {
+      h3 {
+        font-family: $fontTitle;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      small {
+        width: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+      .buttons {
+        width: 180px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .avatar {
+          margin-top: 10px;
+          width: 50px;
+          height: 50px;
+          background-color: white;
+          cursor: pointer;
+
+          svg {
+            fill: $orange !important;
+          }
+        }
+      }
+    }
+  }
+
+  .card {
+    border-radius: 10px;
+    border: 1px solid $paleGray;
+  }
+
+  
+  .cta {
+    margin: 20px auto;
+    display: block;
+  }
+}
+
+.whitedivider {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}

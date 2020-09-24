@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme: Theme) =>
       marginBottom: "200px"
     },
     two: {
-      background: theme.palette.secondary.main,
+      background: theme.palette.primary.main,
       borderBottomLeftRadius: "20px",
       margin: "60px 0px 0px 0px",
       height: "100%",
@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme: Theme) =>
       color: "white",
 
       "& h4": {
-        color: theme.palette.primary.main,
+        color: theme.palette.secondary.main,
         fontSize: theme.typography.pxToRem(15),
         margin: "0 0 30px 0",
         textTransform: "uppercase",

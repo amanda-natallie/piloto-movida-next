@@ -14,6 +14,7 @@ export default class MyDocument extends Document {
           <link rel="icon" href="/images/pwa-192.png" />
           <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,800;1,900&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet" />
+          <link rel="stylesheet" href="style.css"/>
         </Head>
         <body>
           

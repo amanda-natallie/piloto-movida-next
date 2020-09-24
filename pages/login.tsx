@@ -27,6 +27,7 @@ const login = () => {
               className={classes.input}
               fullWidth
               label="E-mail"
+              onChange={(e) => console.log("email", e.target.value)}
               variant="outlined"
             />
             <TextField
@@ -88,7 +89,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     buttonOrange: {
       borderColor: "rgb(20, 32, 43)",
-      backgroundColor: "rgb(247, 73, 25)",
+      backgroundColor: "rgb(247, 125, 0)",
 
       "& * ": {
         color: "white",
