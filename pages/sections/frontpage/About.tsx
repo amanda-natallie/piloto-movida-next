@@ -85,7 +85,7 @@ const useStyles = makeStyles((theme: Theme) =>
       background: "#ececec",
       borderLeft: "2px solid rgb(247, 73, 25)",
       padding: "15px",
-      fontWeight: "light",
+      fontWeight: "lighter",
       fontFamily: "'Bree Serif', serif",
     },
   })
