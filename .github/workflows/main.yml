@@ -36,14 +36,14 @@ jobs:
           export_default_credentials: true
       
       - name: Upload files to bucket
-        run: gsutil -m rsync -R ./build gs://"$BUCKET"
+        run: gsutil -m rsync -R ./build gs://${BUCKET}
       
       - name: Allow public access
-        run: gsutil -m acl ch -R AllUsers:R gs://"$BUCKET"
+        run: gsutil -m acl ch -R AllUsers:R gs://${BUCKET}
       
       - name: Set Cache-Control
-        run: gsutil -m setmeta -h "Cache-Control:public, max-age=15768000" gs://"$BUCKET"/**/*.{png,svg,css,js,tsx}
+        run: gsutil -m setmeta -h "Cache-Control:public, max-age=15768000" gs://${BUCKET}/**/*.{png,svg,css,js,tsx}
       
       - name: Set Cache-Control
-        run: gsutil -m setmeta -h "Cache-Control:no-cache, no-store" gs://"$BUCKET"/index.html
+        run: gsutil -m setmeta -h "Cache-Control:no-cache, no-store" gs://${BUCKET}/index.html
       
