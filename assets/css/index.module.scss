@@ -1,0 +1,59 @@
+@import "./theme/colors";
+@import "./theme/theme";
+
+.dashboardpaper {
+  width: 70%;
+  max-width: 1200px;
+  margin: 60px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: $light_box_shadow;
+  margin-top: -90px;
+  padding: 20px 40px 50px 40px;
+  z-index: 99;
+  background-color: white;
+
+  > section:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid $paleGray;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: flex-start;
+
+      li  {
+        list-style: none;
+        display: inline-block;
+      
+        svg {
+          font-size: 1rem !important;
+          margin-top: 5px;
+        }
+
+        &:last-of-type {
+          color: $orange;
+        }
+      }
+    }
+
+    .actions {
+      width: 150px;
+      color: $softGray;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      svg:not(:nth-child(3)) {
+        color: $orange;
+      }
+    }
+
+  }
+}
+

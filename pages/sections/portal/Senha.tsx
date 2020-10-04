@@ -107,18 +107,18 @@ const useStyles = makeStyles((theme: Theme) =>
       transition: "all 0.3s ease",
     },
     buttonOrange: {
-        backgroundColor: "rgb(247, 73, 25)",
-        border:"1px solid rgb(247, 73, 25)",
+        backgroundColor: "rgb(247, 125, 0)",
+        border:"1px solid rgb(247, 125, 0)",
         "& * ": {
         color: "#fff",
           textDecoration: "none",
         },
         "&:hover": {
-            borderColor: "rgb(247, 73, 25)",
+            borderColor: "rgb(247, 125, 0)",
             backgroundColor: "#fafafa",
         },
         "&:hover *":{
-            color:"rgb(247, 73, 25) !important",
+            color:"rgb(247, 125, 0) !important",
         }
     },
     input: {

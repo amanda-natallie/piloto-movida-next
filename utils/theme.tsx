@@ -7,7 +7,7 @@ export const theme = createMuiTheme({
   },
   palette: {
     primary: {
-      main: "rgb(247, 73, 25)",
+      main: "rgb(247, 125, 0)",
     },
     secondary: {
       main: "rgb(20, 32, 43)",
@@ -15,6 +15,20 @@ export const theme = createMuiTheme({
   },
  
   overrides: {
+    MuiTooltip: {
+      tooltip: {
+        fontSize: "0.95rem",
+        textAlign: "center"
+      }
+    },
+    MuiButton: {
+      containedPrimary: {
+        padding: "15px 20px"
+      },
+      containedSecondary: {
+        padding: "15px 20px"
+      }
+    },
     MuiCssBaseline: {
       "@global": {
         body: {
@@ -22,13 +36,10 @@ export const theme = createMuiTheme({
           padding: 0,
           margin: 0,
           lineHeight: "1.875",
-          fontFamily: "Nunito Sans",
+          fontFamily: "'Nunito Sans', sans-serif",
 
-          a: { textDecoration: "none" },
-          "a:active": { textDecoration: "none" },
-          "a:focus": { textDecoration: "none" },
-          "a:hover": { textDecoration: "none" },
         },
+        a: { textDecoration: "none" },
       },
     },
   },
