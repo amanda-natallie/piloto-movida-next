@@ -39,7 +39,7 @@ jobs:
         run: gsutil -m rsync -R ./build gs://${BUCKET}
       
       - name: Allow public access
-        run: gsutil -m acl ch -R AllUsers:R gs://${BUCKET}
+        run: gsutil acl ch -u AllUsers:R gs://${BUCKET}
       
       - name: Set Cache-Control
         run: gsutil -m setmeta -h "Cache-Control:public, max-age=15768000" gs://${BUCKET}/**/*.{png,svg,css,js,tsx}
