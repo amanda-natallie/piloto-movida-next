@@ -37,11 +37,7 @@ jobs:
       
       - name: Upload files to bucket
         run: gsutil -m rsync -R ./build gs://${BUCKET}
-  
-  access: 
-    runs-on: ubuntu-latest
-
-    steps: 
+      
       - name: Allow public access
         run: gsutil acl ch -u AllUsers:R gs://${BUCKET}
       
