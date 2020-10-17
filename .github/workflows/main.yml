@@ -42,6 +42,6 @@ jobs:
         run: gsutil acl ch -u AllUsers:R gs://${BUCKET}
       
       - name: Set Cache-Control
-        run: gsutil -m setmeta -h "Cache-Control:public, max-age=15768000" gs://${BUCKET}/**/*.{png,svg,css,js,tsx}
+        run: gsutil -m setmeta -h "Cache-Control:public, max-age=15768000" gs://${BUCKET}/**/*.{png,svg,css,js}
       
       
