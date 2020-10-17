@@ -11,9 +11,9 @@ import { theme } from "../utils/theme";
 import Footer from "./template/Footer";
 
 interface Iprops {
-  teste?: string;
+  source?: "dashboard" | "frontpage";
 }
-export const Container: FunctionComponent<Iprops> = ({ children, teste }) => {
+export const Container: FunctionComponent<Iprops> = ({ children, source }) => {
   const classes = useStyles();
 
   return (
@@ -21,7 +21,7 @@ export const Container: FunctionComponent<Iprops> = ({ children, teste }) => {
     <MuiThemeProvider theme={theme}>
       <div className={classes.container}>
         <CssBaseline />
-        <Header />
+        <Header source={source}/>
         {children}
         <Footer />
       </div>

@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from "react";
+import React, { FunctionComponent, useState } from "react";
 import {
   makeStyles,
   Theme,
@@ -8,8 +8,14 @@ import {
   Button,
 } from "@material-ui/core";
 import Link from "next/link";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+import LockIcon from '@material-ui/icons/Lock';
 
-export const Header: FunctionComponent = () => {
+interface Iprops {
+  source?: string;
+}
+
+export const Header: FunctionComponent<Iprops> = ({ source }) => {
   const classes = useStyles();
 
   return (
@@ -46,11 +52,26 @@ export const Header: FunctionComponent = () => {
               </ul>
             </div>
           </Grid>
-          <Grid item xs={3}>
-            <Button className={classes.ctaButton}>
-              <Link href="/portal">Acessar Portal</Link>
-            </Button>
-          </Grid>
+
+          {source && source === "dashboard" ? (
+            <Grid item xs={3}>
+              <Link passHref href="/">
+                <Button className={classes.ctaButton}>
+                  Fazer logout &nbsp;&nbsp;
+                  <ExitToAppIcon />
+                </Button>
+              </Link>
+            </Grid>
+          ) : (
+            <Grid item xs={3}>
+              <Link passHref href="/login">
+                <Button className={classes.ctaButton}>
+                  Area Restrita &nbsp;&nbsp;
+                  <LockIcon />
+                </Button>
+              </Link>
+            </Grid>
+          )}
         </Grid>
       </div>
     </>
@@ -153,6 +174,3 @@ const useStyles = makeStyles((theme: Theme) =>
     },
   })
 );
-
-
-

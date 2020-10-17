@@ -1,5 +1,6 @@
-import { NextPage } from "next";
+
 import Link from "next/link";
+import Head from "next/head";
 import {
   makeStyles,
   Theme,
@@ -17,6 +18,9 @@ const login = () => {
 
   return (
     <>
+    <Head>
+      <title>Faça seu login | Movida Piloto</title>
+    </Head>
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
         <Grid container className={classes.loginContainer}>
@@ -44,6 +48,7 @@ const login = () => {
           </div>
         </Grid>
       </MuiThemeProvider>
+      
     </>
   );
 };
