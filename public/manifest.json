@@ -1,21 +1,21 @@
 {
-  "short_name": "NextPWA",
-  "name": "NextJS PWA",
-  "description": "NextJS app with offline support",
-  "lang": "en-GB",
+  "short_name": "MovidaPiloto",
+  "name": "Movida Piloto",
+  "description": "O seu portal para resolver pendencias com facilidade",
+  "lang": "pt-BR",
   "icons": [
     {
-      "src": "/images/pwa-144.png",
+      "src": "/images/movida.jpg",
       "type": "image/png",
       "sizes": "144x144"
     },
     {
-      "src": "/images/pwa-192.png",
+      "src": "/images/movida.jpg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/pwa-512.png",
+      "src": "/images/movida.jpg",
       "type": "image/png",
       "sizes": "512x512"
     }
