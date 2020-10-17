@@ -6,7 +6,7 @@ import Presentation from "./sections/frontpage/Presentation";
 import Benefits from "./sections/frontpage/Benefits";
 import Strategy from "./sections/frontpage/Strategy";
 
-export default () => {
+ const FrontPage = () => {
   return (
     <>
     <Head>
@@ -21,3 +21,5 @@ export default () => {
     </>
   );
 };
+
+export default FrontPage

@@ -41,11 +41,14 @@ export const Header: FunctionComponent<Iprops> = ({ source }) => {
                 <li>
                   <a href="">Como funciona</a>
                 </li>
-                <li>
-                  <Link href="/login">
-                    <a href="">Login</a>
-                  </Link>
-                </li>
+                {source && source !== "dashboard" && (
+                  <li>
+                    <Link href="/login">
+                      <a href="">Login</a>
+                    </Link>
+                  </li>
+
+                )}
                 <li>
                   <a href="">Benefícios</a>
                 </li>

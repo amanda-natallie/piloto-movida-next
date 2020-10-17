@@ -2,7 +2,7 @@ import React, { FunctionComponent } from "react";
 import { Intro } from "./Intro";
 import styles from "../assets/css/index.module.scss";
 import NavigateNextIcon from "@material-ui/icons/NavigateNext";
-import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import NotificationImportantIcon from "@material-ui/icons/NotificationImportant";
 import { Avatar } from "@material-ui/core";
@@ -28,21 +28,20 @@ export const DashboardPaperBoxed: FunctionComponent<Iprops> = ({
         <section>
           <ul>
             <li>Home</li>
-            {breadcrumb.map((e: any) => (
+            {breadcrumb.map((e: any, key: number) => (
               <>
-                <li>
+                <li key={key}>
                   <NavigateNextIcon fontSize={"small"} />
                 </li>
-                <li>{e}</li>
+                <li key={key+1}>{e}</li>
               </>
             ))}
           </ul>
 
           <div className={styles.actions}>
-            <Avatar alt="Suellen" src={"/images/images/profile-dp.jpg"} />
+            <Avatar alt="Suellen" src={"/images/images/avatar.jpeg"} />
             <NotificationImportantIcon />
             <MailOutlineIcon />
-            <ExitToAppIcon />
           </div>
         </section>
         {children}
