@@ -44,6 +44,4 @@ jobs:
       - name: Set Cache-Control
         run: gsutil -m setmeta -h "Cache-Control:public, max-age=15768000" gs://${BUCKET}/**/*.{png,svg,css,js,tsx}
       
-      - name: Set Cache-Control
-        run: gsutil -m setmeta -h "Cache-Control:no-cache, no-store" gs://${BUCKET}/index.html
       
