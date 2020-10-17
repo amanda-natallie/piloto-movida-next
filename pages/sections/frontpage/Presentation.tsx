@@ -79,7 +79,7 @@ const useStyles = makeStyles((theme: Theme) =>
       borderTopLeftRadius: "5px",
     },
     two: {
-      background: "#E84719",
+      background: "rgb(247, 125, 0)",
       borderTopRightRadius: "5px",
     },
     nextIcon: {

@@ -108,7 +108,7 @@ const useStyles = makeStyles((theme: Theme) =>
             height: "100%",
             alignItems: "center",
             verticalAlign: "middle",
-            padding: "0 32px",
+            padding: "0 20px",
             color: "inherit",
             opacity: 1,
             transition: "0.2s",

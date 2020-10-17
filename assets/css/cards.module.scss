@@ -2,33 +2,80 @@
 @import "./theme/fonts";
 @import "./theme/theme";
 
+.center-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.center-center-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box {
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 20px !important;
+}
+
 .cards {
-  width: calc(100% - 12px);
-  padding-left: 12px;
+  * {
+    font-family: "Nunito Sans";
+    color: $text_color;
+  }
+  width: 100%;
 
   .profile {
-    background-color: $orange;
-    color: white;
-    border-radius: 0 25px 0 25px;
+    @extend .box;
 
     .avatar {
       width: 120px;
       height: 120px;
-      margin: auto;
-      box-shadow: $heavy_box_shadow;
+      margin-right: 20px;
+      box-shadow: $light_box_shadow;
     }
     .intro {
       display: flex;
-      align-items: space-between;
-      justify-content: center;
-      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
       margin-bottom: 20px;
 
-      h3 {
-        margin: 5px 0 0 0;
-        font-family: $fontTitle;
-        letter-spacing: 2px;
-        text-align: center;
+      .description {
+        padding-left: 30px;
+        h3 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 1.5rem;
+          line-height: 10px;
+        }
+        p:first-of-type {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.065rem;
+          line-height: 10px;
+
+          span {
+            display: inline-block;
+            margin: 0 5px;
+          }
+        }
+        p:last-of-type {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 1rem;
+          line-height: 14px;
+
+          span {
+            display: inline-block;
+            font-weight: 600;
+            font-size: 1rem;
+            color: $orange;
+            margin-left: 5px;
+          }
+        }
       }
     }
     .info {
@@ -39,7 +86,6 @@
       justify-content: space-around;
 
       p {
-        
         margin: 0;
         line-height: 1.3rem;
         text-align: center;
@@ -47,36 +93,39 @@
     }
     .benefits {
       h3 {
-        font-family: $fontTitle;
         text-transform: uppercase;
-        text-align: center;
         margin-bottom: 0;
       }
       small {
         width: 100%;
         text-transform: uppercase;
-        text-align: center;
         margin: 0;
         padding: 0;
         display: block;
       }
       .buttons {
-        width: 180px;
-        margin: auto;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
 
         .avatar {
-          margin-top: 10px;
-          width: 50px;
-          height: 50px;
+          margin-top: 20px;
+          width: 55px;
+          height: 55px;
           background-color: white;
           cursor: pointer;
+          transition: all 0.2s ease;
 
           svg {
             fill: $orange !important;
+          }
+          
+          &:hover {
+            background-color: $orange;
+            svg {
+              fill: white !important;
+            }
           }
         }
       }
@@ -88,13 +137,122 @@
     border: 1px solid $paleGray;
   }
 
-  
   .cta {
-    margin: 20px auto;
+    margin-top: 25px;
     display: block;
+    width: 100%;
+    span {
+      color: $orange;
+    }
   }
 }
 
 .whitedivider {
   background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.tickets {
+  @extend .box;
+  margin-left: 20px;
+
+  h2 {
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      @extend .center-space-between;
+
+      &:first-of-type {
+        padding-bottom: 15px;
+      }
+      &:not(:first-of-type) {
+        padding: 15px 0;
+      }
+      &:not(:last-of-type) {
+        border-bottom: 1px solid #ccc;
+      }
+      a {
+        border-radius: 4px;
+        padding: 10px 15px;
+        color: $orange;
+        border: 1px solid #ccc;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: white;
+        background: $orange;
+        }
+        
+      }
+    }
+  }
+  .description {
+    h4 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      display: inline-block;
+    }
+    small {
+      display: inline-block;
+      margin-left: 5px;
+
+      &:first-of-type {
+        color: green;
+      }
+    }
+  }
+  .actions {
+    @extend .center-space-between;
+
+    button {
+      margin-top: 13px;
+
+      &:first-of-type {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.dashboardbottom {
+  width: 100%;
+
+  ul {
+    @extend .center-space-between;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+
+    li a{
+      @extend .center-center-column;
+      width: 220px;
+      height: 220px;
+      border: 1px solid $orange;
+      border-radius: 8px;
+      font-size: 0.975rem;
+      padding: 0 20px;
+      text-align: center;
+      line-height: normal;
+      transition: all 0.2s ease;
+      img {
+        width: 50px;
+        margin-bottom: 20px;
+      }
+
+      &:hover {
+        background: $orange;
+        color: white;
+
+        img {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+  }
 }

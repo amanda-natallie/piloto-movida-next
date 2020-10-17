@@ -87,7 +87,7 @@ const useStyles = makeStyles((theme: Theme) =>
         padding: "5px 0",
         transition: "all 0.3s ease",
         borderColor: "rgba(255, 255, 255, 0)",
-        backgroundColor: "rgb(255, 74, 23)",
+        backgroundColor: "rgb(247, 125, 0)",
         color: "rgb(255, 255, 255)",
         textDecoration: "none",
         "&:hover": {

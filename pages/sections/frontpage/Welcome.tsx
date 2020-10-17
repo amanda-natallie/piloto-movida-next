@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     buttonOrange: {
       borderColor: "rgba(255, 255, 255, 0)",
-      backgroundColor: "rgb(255, 74, 23)",
+      backgroundColor: "rgb(247, 125, 0)",
       color: "rgb(255, 255, 255)",
 
       "&:hover": {

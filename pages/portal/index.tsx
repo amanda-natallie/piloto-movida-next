@@ -1,21 +1,27 @@
-import { Container } from "../../components/Container";
-import { MuiThemeProvider } from "@material-ui/core";
-import { theme } from "../../utils/theme";
-import Cards from "../sections/portal/Cards";
-import { Intro } from "../../components/Intro";
-import { DashboardPaper } from "../../components/DashboardPaper";
+import React from 'react'
+import styles from "../../assets/css/index.module.scss";
+import { Container } from '../../components/Container';
+import { DashboardPaper } from '../../components/DashboardPaper';
+import { DashboardPaperBoxed } from '../../components/DashboardPaperBoxed';
+import Cards from '../sections/portal/Cards';
 
-export default () => {
+
+const HomePageDashboard = () => {
+
+
+
   return (
-    <Container>
-      <DashboardPaper
+   <Container>
+      <DashboardPaperBoxed
         breadcrumb={["Portal"]}
         bg="/images/bg/1.jpg"
         title="Portal do Motorista"
         subtitle="resolva suas pendencias online com facilidade e segurança"
       >
         <Cards />
-      </DashboardPaper>
+      </DashboardPaperBoxed>
     </Container>
-  );
-};
+  )
+}
+
+export default HomePageDashboard
