@@ -1,19 +1,18 @@
-
 html,
 body {
   padding: 0;
   margin: 0;
   line-height: 1.6;
   font-size: 16px;
-  background-color: #0070f3;
 }
 
 * {
+  font-family: "Nunito Sans";
+  color: #58595b;
   box-sizing: border-box;
 }
 
 a {
-  color: #0070f3;
   text-decoration: none;
 }
 
@@ -24,4 +23,8 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+ul {
+  list-style: none;
+  padding: 0;
 }

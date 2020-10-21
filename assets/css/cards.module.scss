@@ -1,25 +1,7 @@
-@import "./theme/colors";
 @import "./theme/fonts";
 @import "./theme/theme";
 
-.center-space-between {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.center-center-column {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 
-.box {
-  border: 1px solid #e5e5e5;
-  box-sizing: border-box;
-  border-radius: 8px;
-  padding: 20px !important;
-}
 
 .cards {
   * {
@@ -138,12 +120,7 @@
   }
 
   .cta {
-    margin-top: 25px;
-    display: block;
-    width: 100%;
-    span {
-      color: $orange;
-    }
+    @extend .outlined-fullwidth-button;
   }
 }
 
@@ -229,7 +206,7 @@
     list-style: none;
     padding: 0;
 
-    li a{
+    li span{
       @extend .center-center-column;
       width: 220px;
       height: 220px;
@@ -240,6 +217,7 @@
       text-align: center;
       line-height: normal;
       transition: all 0.2s ease;
+      cursor: pointer;
       img {
         width: 50px;
         margin-bottom: 20px;

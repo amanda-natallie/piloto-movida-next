@@ -39,7 +39,11 @@ const useStyles = makeStyles((theme: Theme) =>
     container: {
       width: "80%",
       maxWidth: "1400px",
-      margin: "auto"
+      margin: "auto",
+
+      "& * ": {
+        color: "white"
+      }
     },
     pageIntro: {
       position: "relative",

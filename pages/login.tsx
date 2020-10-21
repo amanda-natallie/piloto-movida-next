@@ -77,7 +77,11 @@ const useStyles = makeStyles((theme: Theme) =>
       "& h1": {
         fontFamily: "'Bree Serif', serif",
         margin: "10px 0",
+        color: "white",
       },
+      "& p": {
+        color: "white",
+      }
     },
     btn: {
       zIndex: 14,

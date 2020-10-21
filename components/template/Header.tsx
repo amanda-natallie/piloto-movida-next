@@ -105,7 +105,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     menu: {
       width: "100%",
-      color: "#FFFFFF",
+      
 
       "& ul": {
         fontWeight: "700",
@@ -133,9 +133,9 @@ const useStyles = makeStyles((theme: Theme) =>
             alignItems: "center",
             verticalAlign: "middle",
             padding: "0 20px",
-            color: "inherit",
             opacity: 1,
             transition: "0.2s",
+            color: "#FFFFFF",
 
             "&:after": {
               content: "''",

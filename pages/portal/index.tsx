@@ -1,8 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import styles from "../../assets/css/index.module.scss";
 import { Container } from "../../components/Container";
-import { DashboardPaper } from "../../components/DashboardPaper";
 import { DashboardPaperBoxed } from "../../components/DashboardPaperBoxed";
 import Cards from "../sections/portal/Cards";
 

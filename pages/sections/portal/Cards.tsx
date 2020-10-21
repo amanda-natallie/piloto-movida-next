@@ -1,15 +1,6 @@
 import React from "react";
-import {
-  makeStyles,
-  Theme,
-  createStyles,
-  Link,
-  Grid,
-  Avatar,
-  Divider,
-  Tooltip,
-  Button,
-} from "@material-ui/core";
+import Link from "next/link";
+import { Grid, Avatar, Divider, Tooltip, Button } from "@material-ui/core";
 import styles from "../../../assets/css/cards.module.scss";
 import CardGiftcardOutlinedIcon from "@material-ui/icons/CardGiftcardOutlined";
 import ContactlessOutlinedIcon from "@material-ui/icons/ContactlessOutlined";
@@ -17,6 +8,7 @@ import ConfirmationNumberOutlinedIcon from "@material-ui/icons/ConfirmationNumbe
 import EmojiEventsOutlinedIcon from "@material-ui/icons/EmojiEventsOutlined";
 import BrightnessAutoIcon from "@material-ui/icons/BrightnessAuto";
 import FastfoodIcon from "@material-ui/icons/Fastfood";
+import MenuList from "../../../components/general/MenuList";
 
 const Cards = () => {
   return (
@@ -128,35 +120,7 @@ const Cards = () => {
         <Grid item xs={12}>
           <div className={styles.dashboardbottom}>
             <h2>Navegue pelo seu portal</h2>
-            <ul>
-              <li>
-                <a href="">
-                  <img src="/images/icons/carAlert.svg" alt="car alert" />
-                  Reportar Roubo ou Acidente
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img
-                    src="/images/icons/motoristaAdicional.svg"
-                    alt="motorista adicional"
-                  />
-                  Cadastrar Motorista adicional
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img src="/images/icons/gamificacao.svg" alt="gamificação" />
-                  Saber mais sobre Gamificação
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img src="/images/icons/ajudaOnline.svg" alt="ajudaOnline" />
-                  Obter ajuda online
-                </a>
-              </li>
-            </ul>
+            <MenuList />
           </div>
         </Grid>
       </Grid>

@@ -1,0 +1,47 @@
+@import "./theme/colors";
+@import "./theme/fonts";
+@import "./theme/theme";
+
+.sidebar {
+  width: 100%;
+  border: 1px solid $paleGrey;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 0 20px;
+  
+  & * {
+    transition: all 0.2s ease;
+  }
+
+  ul {
+    li {
+      cursor: pointer;
+      margin-left: -10px;
+      padding-left: 10px;
+      &:not(:last-of-type){
+        border-bottom: 1px solid $paleGray;
+      }
+      span {
+        display: flex;
+        align-items: center;
+        height: 55px;
+        img {
+         width: 20px;
+         margin-right: 10px;
+        }
+        
+       
+      }
+      &:hover {
+        background: $orange;
+        span {
+          color: white;
+        }    
+      
+        img {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@ import NavigateNextIcon from "@material-ui/icons/NavigateNext";
 
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import NotificationImportantIcon from "@material-ui/icons/NotificationImportant";
-import { Avatar } from "@material-ui/core";
+import { Avatar, Grid } from "@material-ui/core";
 
 interface Iprops {
   title: string;
@@ -44,7 +44,9 @@ export const DashboardPaperBoxed: FunctionComponent<Iprops> = ({
             <MailOutlineIcon />
           </div>
         </section>
-        {children}
+        <Grid container>
+          {children}
+        </Grid>
       </div>
     </>
   );
