@@ -1,27 +1,22 @@
 {
-  "short_name": "MovidaPiloto",
-  "name": "Movida Piloto",
-  "description": "O seu portal para resolver pendencias com facilidade",
-  "lang": "pt-BR",
+  "short_name": "Movida Piloto",
+  "name": "MOVIDA PILOTO: Seu dia a dia, mesma rotina, mais praticidade",
+  "description": "Resolva suas pendências online com facilidade e segurança",
   "icons": [
     {
-      "src": "/images/movida.jpg",
-      "type": "image/png",
-      "sizes": "144x144"
-    },
-    {
-      "src": "/images/movida.jpg",
+      "src": "/images/196.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/movida.jpg",
+      "src": "/images/512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": "/?source=pwa",
-  "background_color": "#FFFFFF",
+  "background_color": "#E95603",
   "display": "standalone",
-  "theme_color": "#3f51b5"
+  "scope": "/",
+  "theme_color": "#E95603"
 }
