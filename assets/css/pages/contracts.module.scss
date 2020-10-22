@@ -1,0 +1,12 @@
+@import "../theme/_theme";
+
+.contracts {
+  width: 100%;
+  padding: 20px;
+}
+
+.contractActions {
+  .cta {
+    @extend .outlined-inline-button;
+  }
+}

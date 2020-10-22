@@ -28,6 +28,22 @@ const MenuList = ({ internal }: Iprops) => {
         </Link>
       </li>
       <li>
+        <Link passHref href="/portal/documentos">
+          <span>
+            <img src="/images/icons/document.svg" alt="document" />
+            Consultar seus documentos
+          </span>
+        </Link>
+      </li>
+      <li>
+        <Link passHref href="/portal/contratos">
+          <span>
+            <img src="/images/icons/contrato.svg" alt="contrato" />
+            Ver contrato atual
+          </span>
+        </Link>
+      </li>
+      <li>
         <Link passHref href="/portal/reportar-roubo-ou-acidente">
           <span>
             <img

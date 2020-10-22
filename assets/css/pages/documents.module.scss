@@ -1,0 +1,75 @@
+@import "../theme/theme";
+
+.documents {
+  padding:0 40px;
+  ul {
+    li {
+      @extend .box;
+      display: flex;
+      align-items: center;
+      flex-basis: content;
+      box-shadow: 3px 5px 14px rgba(0, 0, 0, 0.07);
+      margin-bottom: 20px;
+
+      
+      .icon {
+        width: 15%;
+        @extend .center-center-column;
+        margin-right: 60px;
+
+        p {
+          margin: 0;
+          text-align: center;
+          line-height: 1.5;
+          margin-top: 10px;
+        }
+      }
+      .description {
+        flex-grow: 12;
+        header {
+          p {
+            color: $gray04;
+            padding: 0;
+            margin: 0;
+            span{
+              color: $text_color;
+              display: inline-block;
+              margin-left: 10px;
+            }
+          }
+        }
+        footer {
+          margin-top: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          span:first-of-type {
+            color: $orange;
+            border: 1px solid $paleGray;
+            padding: 3px 25px;
+            font-size: 0.750rem;
+            border-radius: 4px;
+          }
+          span:last-of-type {
+            width: 60px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.750rem;
+            color: $text_color;
+            cursor: pointer;
+            transition: all .2s ease;
+            padding: 5px 15px;
+            border-radius: 4px;
+
+            &:hover {
+              color: $orange;
+              border: 1px solid $orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}

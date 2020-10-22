@@ -1,64 +1,73 @@
 import React from "react";
-import { makeStyles, Theme, createStyles, Grid, Button } from "@material-ui/core";
+import Head from "next/head";
 import { Container } from "../../components/Container";
-import { DashboardPaper } from "../../components/DashboardPaper";
-import Sidebar from "../../components/Sidebar";
+import { DashboardPaperBoxed } from "../../components/DashboardPaperBoxed";
+import styles from "../../assets/css/pages/contracts.module.scss";
+import { Button, Grid } from "@material-ui/core";
+import Sidebar from "../../components/template/Sidebar";
 
-const contratos = () => {
-  const classes = useStyles();
+const Contracts = () => {
   return (
-    <Container>
-      <DashboardPaper
-        breadcrumb={["Portal", "Meus Contratos"]}
-        bg="/images/bg/1.jpg"
-        title="Meus Contratos"
-        subtitle="resolva suas pendencias online com facilidade e segurança"
-      >
-        <Grid container spacing={3}>
+    <>
+      <Head>
+        <title>Portal do Motorista - Movida Piloto</title>
+      </Head>
+      <Container source="dashboard">
+        <DashboardPaperBoxed
+          breadcrumb={["Portal", "Seus Documentos"]}
+          bg="/images/bg/1.jpg"
+          title="Documentação"
+          subtitle="Nesta tela estão armazenados os documentos que você necessita para fazer transações no painel do motorista. Mantenha-os sempre atualizados!"
+        >
           <Sidebar />
-          <Grid item md={9}>
-            <div className={classes.root}>
+          <Grid item xs={9}>
+            <div className={styles.contracts}>
               <h2>Informações de seu contrato atual</h2>
-              
+
               <ul>
-                <li><span>Data de Inicio: </span> 24/12/2019</li>
-                <li><span>Data de Término: </span> 24/12/2029</li>
-                <li><span>Modelo Carro: </span> Kia Soul</li>
-                <li><span>Placa Carro: </span> GRT-6553</li>
-                <li><span>KM Rodados: </span> 483.008</li>
-                <li><span>Responsável Financeiro </span> Suellen Mariano Garcia</li>
-                <li><span>Locatário: </span> Suellen Mariano Garcia</li>
+                <li>
+                  <span>Data de Inicio: </span> 24/12/2019
+                </li>
+                <li>
+                  <span>Data de Término: </span> 24/12/2029
+                </li>
+                <li>
+                  <span>Modelo Carro: </span> Kia Soul
+                </li>
+                <li>
+                  <span>Placa Carro: </span> GRT-6553
+                </li>
+                <li>
+                  <span>KM Rodados: </span> 483.008
+                </li>
+                <li>
+                  <span>Responsável Financeiro </span> Suellen Mariano Garcia
+                </li>
+                <li>
+                  <span>Locatário: </span> Suellen Mariano Garcia
+                </li>
               </ul>
               <hr />
-              <div className={classes.actions}>
-              <Button variant="contained" color="primary">Renovar Plano</Button> &nbsp;&nbsp;&nbsp;
-              <Button variant="contained" color="primary">Cancelar Plano</Button> &nbsp;&nbsp;&nbsp;
-              <Button variant="contained" color="primary">Visualizar contrato</Button>
+              <div className={styles.contractActions}>
+              
+                <Button variant="outlined" color="primary" className={styles.cta}>
+                  Renovar Plano
+                </Button>
+                &nbsp;&nbsp;&nbsp;
+                <Button variant="outlined" color="primary" className={styles.cta}>
+                  Cancelar Plano
+                </Button>{" "}
+                &nbsp;&nbsp;&nbsp;
+                <Button variant="outlined" color="primary" className={styles.cta}>
+                  Visualizar contrato
+                </Button> 
               </div>
             </div>
           </Grid>
-        </Grid>
-      </DashboardPaper>
-    </Container>
+        </DashboardPaperBoxed>
+      </Container>
+    </>
   );
 };
-const useStyles = makeStyles((theme: Theme) => createStyles({
-  root: {
-    width: "100%",
-    padding: "30px",
-    boxShadow: "6px 5px 30px 0px rgba(0,0,0,0.12)",
-    
-    "& h2": {
-      fontFamily: "'Bree Serif', serif",
-      marginTop:0,
-      fontWeight: 400,
-    }
-  },
-  actions: {
-    marginTop: 30,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "flex-start"
-  }
-}));
-export default contratos;
+
+export default Contracts;
