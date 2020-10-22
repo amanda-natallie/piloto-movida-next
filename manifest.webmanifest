@@ -1,0 +1,22 @@
+{
+  "short_name": "Movida Piloto",
+  "name": "MOVIDA PILOTO: Seu dia a dia, mesma rotina, mais praticidade",
+  "description": "Resolva suas pendências online com facilidade e segurança",
+  "icons": [
+    {
+      "src": "/images/196.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#E95603",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#E95603"
+}
