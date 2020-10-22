@@ -6,7 +6,7 @@ import MenuList from "../general/MenuList";
 
 const Sidebar = () => {
   return (
-    <Grid item md={4}>
+    <Grid item md={3}>
       <div className={styles.sidebar}>
         <h3>Navegue pelo portal</h3>
         <MenuList internal/>
