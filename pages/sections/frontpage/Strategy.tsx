@@ -14,7 +14,7 @@ const Strategy = () => {
   return (
     <div className={classes.Strategy}>
       <h3>Nossos serviços</h3>
-      <h2>Selecione o serviço desejado</h2>
+      <h2>Saiba o que você pode fazer no seu portal!</h2>
 
       <div className={classes.topics}>
 

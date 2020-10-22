@@ -63,6 +63,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
       "& h3": {
         fontWeight: 100,
+        color: "white",
       },
     },
     child: {
@@ -77,6 +78,7 @@ const useStyles = makeStyles((theme: Theme) =>
     one: {
       background: "#14202B",
       borderTopLeftRadius: "5px",
+      
     },
     two: {
       background: "rgb(247, 125, 0)",
