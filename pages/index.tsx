@@ -5,6 +5,8 @@ import Presentation from "./sections/frontpage/Presentation";
 
 import Benefits from "./sections/frontpage/Benefits";
 import Strategy from "./sections/frontpage/Strategy";
+import React from "react";
+import { Hidden } from "@material-ui/core";
 
  const FrontPage = () => {
   return (
@@ -15,8 +17,10 @@ import Strategy from "./sections/frontpage/Strategy";
       <Container>
         <Welcome />
         <Presentation />
-        <Benefits />
-        <Strategy />
+        <Hidden smDown >
+          <Benefits />
+          <Strategy />
+        </Hidden>
       </Container>
     </>
   );

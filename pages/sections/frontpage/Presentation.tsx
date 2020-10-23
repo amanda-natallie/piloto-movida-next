@@ -163,6 +163,9 @@ const useStyles = makeStyles((theme: Theme) =>
         width: " 100%,",
         margin: 0,
       },
+      [theme.breakpoints.down("sm")]: {
+        padding: "20px"
+      }
     },
     img: {
       float: "right",
