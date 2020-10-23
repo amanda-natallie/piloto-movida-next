@@ -129,6 +129,9 @@
 }
 
 .tickets {
+  @media only screen and (max-width: 576px) {
+    margin: 20px 0;
+  }
   @extend .box;
   margin-left: 20px;
 
@@ -201,11 +204,14 @@
   width: 100%;
 
   ul {
-    @extend .center-space-between;
+    @extend .center-center;
     width: 100%;
     list-style: none;
     padding: 0;
-
+    flex-wrap: wrap;
+    li {
+      margin: 10px;
+    }
     li span{
       @extend .center-center-column;
       width: 170px;
@@ -230,6 +236,9 @@
         img {
           filter: brightness(0) invert(1);
         }
+      }
+      @media only screen and (max-width: 576px){
+        font-size: 1.5rem;
       }
     }
   }
