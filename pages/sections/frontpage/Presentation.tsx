@@ -74,6 +74,12 @@ const useStyles = makeStyles((theme: Theme) =>
       justifyContent: "inherit",
       flexDirection: "row",
       padding: `0 ${theme.spacing(10)}px`,
+      [theme.breakpoints.down("sm")]: {
+        padding: "0 10px",
+        flexDirection: "column",
+        
+        
+      }
     },
     one: {
       background: "#14202B",

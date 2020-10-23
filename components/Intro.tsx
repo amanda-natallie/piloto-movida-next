@@ -104,6 +104,9 @@ const useStyles = makeStyles((theme: Theme) =>
         margin: 0,
         textAlign: "left",
       },
+      [theme.breakpoints.down("sm")]: {
+        width: "100%"
+      }
     },
   })
 );
