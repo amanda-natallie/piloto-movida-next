@@ -9,6 +9,7 @@ import EmojiEventsOutlinedIcon from "@material-ui/icons/EmojiEventsOutlined";
 import BrightnessAutoIcon from "@material-ui/icons/BrightnessAuto";
 import FastfoodIcon from "@material-ui/icons/Fastfood";
 import MenuList from "../../../components/general/MenuList";
+import Map from "../../../components/Map";
 
 const Cards = () => {
   return (
@@ -127,8 +128,8 @@ const Cards = () => {
         </Grid>
         <Grid item xs={12}>
           <div className={styles.dashboardbottom}>
-            <h2>Lojas de Suporte ao motorista mais próximas!</h2>
-            
+            <h2>Lojas de Suporte ao motorista mais próximas!</h2> 
+            <Map />
           </div>
         </Grid>
       </Grid>
