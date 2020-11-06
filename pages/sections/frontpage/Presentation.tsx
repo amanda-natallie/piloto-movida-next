@@ -5,16 +5,7 @@ const Presentation = () => {
   const classes = useStyles();
   return (
     <>
-      <div className={classes.cta}>
-        <div className={`${classes.child} ${classes.one}`}>
-          <h3>Sou usuário padrão</h3>
-          <i className={classes.nextIcon} />
-        </div>
-        <div className={`${classes.child} ${classes.two}`}>
-          <h3>Sou motorista de aplicativo</h3>
-          <i className={classes.nextIcon} />
-        </div>
-      </div>
+      
       <div className={classes.presentation}>
         <Grid container>
           <Grid item md={5}>
