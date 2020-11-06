@@ -31,10 +31,10 @@ export const DashboardPaperBoxed: FunctionComponent<Iprops> = ({
             <li>Home</li>
             {breadcrumb.map((e: any, key: number) => (
               <>
-                <li key={key}>
+                <li key={`sdfasd${key - 1}`}>
                   <NavigateNextIcon fontSize={"small"} />
                 </li>
-                <li key={key+1}>{e}</li>
+                <li key={key}>{e}</li>
               </>
             ))}
           </ul>

@@ -110,9 +110,11 @@ const Cards = () => {
               <Button variant="outlined" color="primary" className={styles.cta}>
                 Pedir ajuda
               </Button>
-              <Button variant="outlined" color="primary" className={styles.cta}>
-                Ver todos os tickets
-              </Button>
+              <Link passHref href="/portal/tickets-de-suporte">
+                <Button variant="outlined" color="primary" className={styles.cta}>
+                  Ver todos os tickets
+                </Button>
+              </Link>
             </div>
           </div>
         </Grid>
@@ -121,6 +123,12 @@ const Cards = () => {
           <div className={styles.dashboardbottom}>
             <h2>Navegue pelo seu portal</h2>
             <MenuList />
+          </div>
+        </Grid>
+        <Grid item xs={12}>
+          <div className={styles.dashboardbottom}>
+            <h2>Lojas de Suporte ao motorista mais próximas!</h2>
+            
           </div>
         </Grid>
       </Grid>

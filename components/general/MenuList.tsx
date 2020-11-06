@@ -56,7 +56,7 @@ const MenuList = ({ internal }: Iprops) => {
         </Link>
       </li>
       <li>
-        <Link passHref href="/portal/reportar-roubo-ou-acidente">
+        <Link passHref href="/portal/tickets-de-suporte">
           <span>
             <img src="/images/icons/ajudaOnline.svg" alt="ajudaOnline" />
             Obter ajuda online
