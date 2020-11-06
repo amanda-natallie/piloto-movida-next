@@ -19,14 +19,7 @@ const MenuList = ({ internal }: Iprops) => {
           </Link>
         </li>
       )}
-      <li>
-        <Link passHref href="/portal/reportar-roubo-ou-acidente">
-          <span>
-            <img src="/images/icons/carAlert.svg" alt="car alert" />
-            Reportar Roubo ou Acidente
-          </span>
-        </Link>
-      </li>
+      
       <li>
         <Link passHref href="/portal/documentos">
           <span>
@@ -67,6 +60,14 @@ const MenuList = ({ internal }: Iprops) => {
           <span>
             <img src="/images/icons/ajudaOnline.svg" alt="ajudaOnline" />
             Obter ajuda online
+          </span>
+        </Link>
+      </li>
+      <li>
+        <Link passHref href="/portal/reportar-roubo-ou-acidente">
+          <span>
+            <img src="/images/icons/carAlert.svg" alt="car alert" />
+            Reportar Roubo ou Acidente
           </span>
         </Link>
       </li>

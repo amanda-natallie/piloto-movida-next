@@ -1,0 +1,21 @@
+.boxNotification {
+ padding: 5px;
+ margin: 5px;
+ width: calc(100% - 10px);
+.header {
+  display: flex;
+  align-items: center;
+
+  small {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+ .box {
+   padding: 10px;
+
+   h3 { margin: 0; padding: 0;}
+   p { margin: 0; padding: 0;}
+
+ }
+}

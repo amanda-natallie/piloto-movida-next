@@ -5,6 +5,9 @@ import { DashboardPaperBoxed } from "../../components/DashboardPaperBoxed";
 import styles from "../../assets/css/pages/contracts.module.scss";
 import { Button, Grid } from "@material-ui/core";
 import Sidebar from "../../components/template/Sidebar";
+import RoomIcon from "@material-ui/icons/Room";
+import EventAvailableIcon from "@material-ui/icons/EventAvailable";
+import DateRangeIcon from "@material-ui/icons/DateRange";
 
 const Contracts = () => {
   return (
@@ -22,46 +25,74 @@ const Contracts = () => {
           <Sidebar />
           <Grid item xs={9}>
             <div className={styles.contracts}>
-              <h2>Informações de seu contrato atual</h2>
+              <Grid container>
+                <Grid item xs={12}>
+                  <h2>Informações de seu contrato atual</h2>
+                </Grid>
+                <Grid item xs={4}>
+                  <div className={styles.resumeContract}>
+                    <img src="/images/carro.png" alt="" />
+                    <h3>Grupo B - Economico</h3>
+                    <p>Sandero, Onix, Argo, Eitos ou similar</p>
+                  </div>
+                  <div className={styles.contractActions}>
+                    <Button
+                      variant="outlined"
+                      color="primary"
+                      className={styles.cta}
+                    >
+                      Renovar Plano
+                    </Button>
+                    &nbsp;&nbsp;&nbsp;
+                    <Button
+                      variant="outlined"
+                      color="primary"
+                      className={styles.cta}
+                    >
+                      Cancelar Plano
+                    </Button>{" "}
+                    &nbsp;&nbsp;&nbsp;
+                    <Button
+                      variant="outlined"
+                      color="primary"
+                      className={styles.cta}
+                    >
+                      Visualizar contrato
+                    </Button>
+                  </div>
+                </Grid>
+                <Grid item xs={8}>
+                  <div className={styles.box}>
+                    <ul>
+                      <li>
+                        <p>Local de Retirada:</p>
+                        <span>
+                          <RoomIcon /> São Paulo - Barra Funda
+                        </span>
+                      </li>
 
-              <ul>
-                <li>
-                  <span>Data de Inicio: </span> 24/12/2019
-                </li>
-                <li>
-                  <span>Data de Término: </span> 24/12/2029
-                </li>
-                <li>
-                  <span>Modelo Carro: </span> Kia Soul
-                </li>
-                <li>
-                  <span>Placa Carro: </span> GRT-6553
-                </li>
-                <li>
-                  <span>KM Rodados: </span> 483.008
-                </li>
-                <li>
-                  <span>Responsável Financeiro </span> Suellen Mariano Garcia
-                </li>
-                <li>
-                  <span>Locatário: </span> Suellen Mariano Garcia
-                </li>
-              </ul>
-              <hr />
-              <div className={styles.contractActions}>
-              
-                <Button variant="outlined" color="primary" className={styles.cta}>
-                  Renovar Plano
-                </Button>
-                &nbsp;&nbsp;&nbsp;
-                <Button variant="outlined" color="primary" className={styles.cta}>
-                  Cancelar Plano
-                </Button>{" "}
-                &nbsp;&nbsp;&nbsp;
-                <Button variant="outlined" color="primary" className={styles.cta}>
-                  Visualizar contrato
-                </Button> 
-              </div>
+                      <li>
+                        <p>Data e Hora da Retirada</p>
+                        <span>
+                          <EventAvailableIcon /> 09/04/2020 - 9:46
+                        </span>
+                      </li>
+                      <li>
+                        <p>Data e Hora de Devolução:</p>
+                        <span>
+                          <DateRangeIcon /> 30/03/2022 13:30
+                        </span>
+                      </li>
+                      <li>
+                        <p>Período contratado:</p>
+                        <span>720 dias</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                 
+                </Grid>
+              </Grid>
             </div>
           </Grid>
         </DashboardPaperBoxed>
